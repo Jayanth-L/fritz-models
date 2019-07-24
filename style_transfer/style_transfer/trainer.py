@@ -470,6 +470,7 @@ def train(
 
     start_time = time.time()
     for step in range(num_iterations):
+        print("Current iteration: {}".format(step))
         # perform the operations we defined earlier on batch
 
         out = func_train([style_imgs, 1.])
